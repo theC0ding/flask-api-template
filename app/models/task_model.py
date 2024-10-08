@@ -2,6 +2,7 @@ from enum import Enum
 # uuid is a module that helps generate random unique identifiers
 import uuid
 
+
 class TaskStatus(Enum):
     PENDING = 'PENDING'
     COMPLETED = 'COMPLETED'

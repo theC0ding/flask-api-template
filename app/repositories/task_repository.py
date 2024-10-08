@@ -1,11 +1,13 @@
 from app.models.task_model import Task, TaskStatus
+import uuid
+
 
 class TaskRepository:
     def __init__(self):
         self.tasks = []
 
     def create_task(self, task_name: str, task_description: str) -> Task:
-        task = Task(task_name, task_description, TaskStatus.PENDING)
+        task = Task(uuid.uuid4(), task_name, task_description, TaskStatus.PENDING)
         self.tasks.append(task)
         return task
 
