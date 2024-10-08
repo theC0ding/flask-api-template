@@ -21,5 +21,5 @@ class Task:
             'task_id': self.task_id.hex,
             'task_name': self.task_name,
             'task_description': self.task_description,
-            'task_status': self.task_status
+            'task_status': self.task_status.value
         }
